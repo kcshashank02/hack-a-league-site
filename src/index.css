@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-darkbg: #07030f;
+  --color-darkbg-secondary: #0f0a1a;
+  --color-lavender: #7c3aed;
+  --color-lavender-dark: #5b21b6;
+  --color-lavender-light: #a78bfa;
+  --color-neon: #22c55e;
+  --color-neon-glow: #4ade80;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-darkbg);
+  color: white;
+}
+
+html,
+body,
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
