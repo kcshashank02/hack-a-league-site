@@ -39,7 +39,7 @@ export default function Feedback() {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full px-4 py-3 rounded-xl bg-black/30 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-neon/50 focus:border-neon/50 transition"
+                className="w-full px-4 py-3 rounded-xl bg-black/30 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-slate-400/50 focus:border-slate-400/50 transition"
                 placeholder="Your name"
               />
             </div>
@@ -51,7 +51,7 @@ export default function Feedback() {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full px-4 py-3 rounded-xl bg-black/30 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-neon/50 focus:border-neon/50 transition"
+                className="w-full px-4 py-3 rounded-xl bg-black/30 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-slate-400/50 focus:border-slate-400/50 transition"
                 placeholder="you@example.com"
               />
             </div>
@@ -63,13 +63,13 @@ export default function Feedback() {
                 id="message"
                 name="message"
                 rows={5}
-                className="w-full px-4 py-3 rounded-xl bg-black/30 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-neon/50 focus:border-neon/50 transition resize-none"
+                className="w-full px-4 py-3 rounded-xl bg-black/30 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-slate-400/50 focus:border-slate-400/50 transition resize-none"
                 placeholder="Your feedback..."
               />
             </div>
             <button
               type="submit"
-              className="w-full py-4 rounded-xl bg-neon text-darkbg font-semibold shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:shadow-[0_0_30px_rgba(34,197,94,0.6)] transition-all duration-300 hover:scale-[1.02]"
+              className="w-full py-4 rounded-xl bg-slate-300 hover:bg-slate-200 text-black font-semibold transition-all duration-300"
             >
               Send Feedback
             </button>

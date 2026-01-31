@@ -19,17 +19,17 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-neon transition-colors">
+                <a href="#" className="text-gray-400 hover:text-slate-400 transition-colors">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#legacy" className="text-gray-400 hover:text-neon transition-colors">
+                <a href="#legacy" className="text-gray-400 hover:text-slate-400 transition-colors">
                   History & Roadmap
                 </a>
               </li>
               <li>
-                <a href="#feedback" className="text-gray-400 hover:text-neon transition-colors">
+                <a href="#feedback" className="text-gray-400 hover:text-slate-400 transition-colors">
                   Feedback
                 </a>
               </li>
@@ -38,7 +38,7 @@ export default function Footer() {
                   href={siteConfig.registerLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-neon transition-colors"
+                  className="text-gray-400 hover:text-slate-400 transition-colors"
                 >
                   Register
                 </a>
@@ -51,7 +51,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>{siteConfig.eventLocation}</li>
               <li>
-                <a href="mailto:hello@halhack.dev" className="hover:text-neon transition-colors">
+                <a href="mailto:hello@halhack.dev" className="hover:text-slate-400 transition-colors">
                   hello@halhack.dev
                 </a>
               </li>
