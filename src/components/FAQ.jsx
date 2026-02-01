@@ -58,7 +58,7 @@ export default function FAQ() {
                     isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
                   }`}
                 >
-                  <div className="overflow-hidden bg-[#0b0812] px-5 py-4">
+                  <div className={`overflow-hidden bg-[#0b0812] px-5 py-4${isOpen ? '' : ' h-0 p-0'}${isOpen ? '' : ' hidden'}`}>
                     <p className="text-gray-200 leading-relaxed">{item.a}</p>
                   </div>
                 </div>
