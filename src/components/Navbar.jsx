@@ -12,20 +12,38 @@ export default function Navbar() {
         </a>
 
         <div className="flex items-center gap-8">
-          <a href="#legacy" className="text-gray-300 hover:text-lavender transition-colors">
+          <a href="#legacy" className="text-gray-300 hover:text-slate-400 transition-colors">
             History & Roadmap
           </a>
-          <a href="#feedback" className="text-gray-300 hover:text-lavender transition-colors">
+          <a href="#feedback" className="text-gray-300 hover:text-slate-400 transition-colors">
             Feedback
           </a>
           <a
             href={siteConfig.registerLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2.5 rounded-xl bg-neon text-darkbg font-semibold shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:shadow-[0_0_30px_rgba(34,197,94,0.6)] transition-all duration-300 hover:scale-105"
+            className="px-5 py-2.5 rounded-xl bg-slate-300 hover:bg-slate-200 text-black font-semibold transition-all duration-300"
           >
             Register Now
           </a>
+        </div>
+      </div>
+
+      <div
+        className="marquee overflow-hidden bg-purple-600 h-9 flex items-center"
+        aria-live="polite"
+      >
+        <div className="marquee-track flex shrink-0" style={{ "--marquee-duration": "18s" }}>
+          <div className="flex min-w-full items-center">
+            <span className="inline-flex items-center text-slate-200 uppercase tracking-widest text-sm px-6 whitespace-nowrap">
+              24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON •
+            </span>
+          </div>
+          <div className="flex min-w-full items-center" aria-hidden="true">
+            <span className="inline-flex items-center text-slate-200 uppercase tracking-widest text-sm px-6 whitespace-nowrap">
+              24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON •
+            </span>
+          </div>
         </div>
       </div>
     </nav>
