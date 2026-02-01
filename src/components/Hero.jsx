@@ -5,9 +5,7 @@ const container = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.12,
-    },
+    transition: { staggerChildren: 0.12 },
   },
 }
 
@@ -23,19 +21,28 @@ const item = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20 sm:pt-16">
-      {/* Background motion */}
+      {/* 🌌 Living background */}
       <motion.img
         src="/images/hero/hero.png"
         alt={siteConfig.eventName}
-        initial={{ scale: 1.1 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 1.6, ease: "easeOut" }}
         className="absolute inset-0 w-full h-full object-cover"
+        initial={{ scale: 1.08, y: 0 }}
+        animate={{
+          scale: [1.08, 1.04, 1.08],
+          y: [0, -20, 0],
+        }}
+        transition={{
+          duration: 18,
+          ease: "easeInOut",
+          repeat: Infinity,
+        }}
       />
 
+      {/* Overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-darkbg" />
       <div className="absolute inset-0 bg-gradient-to-r from-lavender/10 to-transparent" />
 
+      {/* Content */}
       <motion.div
         variants={container}
         initial="hidden"
@@ -75,8 +82,8 @@ export default function Hero() {
           href={siteConfig.registerLink}
           target="_blank"
           rel="noopener noreferrer"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.98 }}
+          whileHover={{ scale: 1.06 }}
+          whileTap={{ scale: 0.97 }}
           className="inline-block px-8 sm:px-10 py-3 sm:py-4 rounded-xl bg-slate-300 hover:bg-slate-200 text-black font-bold text-base sm:text-lg transition-all duration-300"
         >
           Register Now →

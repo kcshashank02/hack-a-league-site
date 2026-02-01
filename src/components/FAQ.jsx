@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from "framer-motion"
 const faqs = [
   {
     q: "Who can participate?",
-    a: "Anyone with a passion for technology can participate. Whether you’re a student, professional, or hobbyist, you’re welcome to join. Teams must consist of 2–4 members.",
+    a: " Only UG Students with a passion for technology can participate. Teams must consist of 3–4 members.",
   },
   {
     q: "What should I bring?",
-    a: "Bring your laptop, charger, any hardware you might need, and your enthusiasm. We’ll provide food, drinks, internet, and workspace.",
+    a: "Bring your laptop, charger, any hardware you might need, and your enthusiasm. We’ll provide food, internet, and workspace.",
   },
   {
     q: "Do I need to have a team beforehand?",

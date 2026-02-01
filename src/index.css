@@ -30,6 +30,25 @@ body,
   box-sizing: border-box;
 }
 
+/* ===== TRUE INFINITE MARQUEE (FIXED) ===== */
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;  /* Slowed down slightly */
+}
+
+.marquee-item {
+  display: inline-block;  /* Changed from flex */
+  white-space: nowrap;
+  flex-shrink: 0;  /* Prevent shrinking */
+}
+
 @keyframes marquee-scroll {
   from {
     transform: translateX(0);
@@ -39,15 +58,12 @@ body,
   }
 }
 
-.marquee-track {
-  animation: marquee-scroll var(--marquee-duration, 18s) linear infinite;
-  will-change: transform;
-}
-
+/* Pause on hover */
 .marquee:hover .marquee-track {
   animation-play-state: paused;
 }
 
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
     animation: none !important;

@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 const eventDetails = [
   { icon: "🛰️", label: "Event Status", value: "OFFLINE" },
-  { icon: "🗓️", label: "Registration Deadline", value: "15th February" },
+  { icon: "🗓️", label: "Registration Deadline", value: "19th Feb, 2026" },
   { icon: "⏱️", label: "Duration", value: "24 Hours" },
   { icon: "👥", label: "Participation", value: "Team (3–4)" },
   { icon: "💰", label: "Registration Fee", value: "INR 350 / Participant" },

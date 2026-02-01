@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import { siteConfig } from "../config/siteConfig"
 
+
 const container = {
   hidden: {},
   visible: {
@@ -10,6 +11,7 @@ const container = {
   },
 }
 
+
 const item = {
   hidden: { opacity: 0, y: 16 },
   visible: {
@@ -18,6 +20,7 @@ const item = {
     transition: { duration: 0.35, ease: "easeOut" },
   },
 }
+
 
 export default function Footer() {
   return (
@@ -47,6 +50,7 @@ export default function Footer() {
             </p>
           </motion.div>
 
+
           {/* Quick Links */}
           <motion.div variants={item} className="text-center md:text-left">
             <h4 className="text-white font-semibold mb-3 sm:mb-4">
@@ -56,7 +60,6 @@ export default function Footer() {
               {[
                 { label: "Home", href: "#" },
                 { label: "History & Roadmap", href: "#legacy" },
-                { label: "Feedback", href: "#feedback" },
               ].map((link) => (
                 <li key={link.label}>
                   <motion.a
@@ -82,6 +85,7 @@ export default function Footer() {
             </ul>
           </motion.div>
 
+
           {/* Contact */}
           <motion.div variants={item} className="text-center md:text-left">
             <h4 className="text-white font-semibold mb-3 sm:mb-4">
@@ -101,28 +105,15 @@ export default function Footer() {
             </ul>
           </motion.div>
         </div>
-
+              
         {/* Bottom bar */}
         <motion.div
           variants={item}
-          className="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4"
+          className="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-white/10 flex justify-center items-center"
         >
-          <p className="text-gray-500 text-xs sm:text-sm text-center md:text-left">
+          <p className="text-gray-500 text-xs sm:text-sm text-center">
             © {new Date().getFullYear()} {siteConfig.brandName}. All rights reserved.
           </p>
-
-          <div className="flex gap-4 sm:gap-6 text-xs sm:text-sm">
-            {["Privacy Policy", "Terms of Service"].map((text) => (
-              <motion.a
-                key={text}
-                whileHover={{ y: -2 }}
-                href="#"
-                className="text-gray-500 hover:text-gray-400 transition-colors"
-              >
-                {text}
-              </motion.a>
-            ))}
-          </div>
         </motion.div>
       </motion.div>
     </footer>

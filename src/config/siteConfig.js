@@ -25,7 +25,7 @@ export const siteConfig = {
   eventName: "Hack A League 4.0",
   eventDates: "February 21st–22nd 2026",
   eventLocation: "Global Academy of Technology",
-  brandName: "Hack A League",
+  brandName: "Hack-a-League",
 
   // change later to your Unstop link
   registerLink: "https://unstop.com/hackathons/hack-a-league-40-global-academy-of-technology-1628697",

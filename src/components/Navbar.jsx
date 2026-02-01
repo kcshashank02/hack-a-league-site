@@ -9,6 +9,7 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-xl border-b border-white/5"
     >
+      {/* Top bar */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
         <motion.a
           href="#"
@@ -35,14 +36,6 @@ export default function Navbar() {
           </motion.a>
 
           <motion.a
-            href="#feedback"
-            whileHover={{ y: -2 }}
-            className="hidden sm:inline text-gray-300 hover:text-slate-400 transition-colors"
-          >
-            Feedback
-          </motion.a>
-
-          <motion.a
             href={siteConfig.registerLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -55,25 +48,24 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Marquee (unchanged) */}
-      <div
-        className="marquee overflow-hidden bg-purple-600 h-8 sm:h-9 flex items-center"
-        aria-live="polite"
-      >
-        <div
-          className="marquee-track flex shrink-0"
-          style={{ "--marquee-duration": "18s" }}
-        >
-          <div className="flex min-w-full items-center">
-            <span className="inline-flex items-center text-slate-200 uppercase tracking-widest text-xs sm:text-sm px-4 sm:px-6 whitespace-nowrap">
-              24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON •
-            </span>
-          </div>
-          <div className="flex min-w-full items-center" aria-hidden="true">
-            <span className="inline-flex items-center text-slate-200 uppercase tracking-widest text-xs sm:text-sm px-4 sm:px-6 whitespace-nowrap">
-              24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON •
-            </span>
-          </div>
+      {/* Infinite Marquee - FIXED */}
+      <div className="marquee bg-purple-600 h-8 sm:h-9 flex items-center">
+        <div className="marquee-track">
+          {/* Repeat text MANY times in first span */}
+          <span className="marquee-item text-slate-200 uppercase tracking-widest text-xs sm:text-sm">
+            24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 
+            24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 
+            24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 
+            24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON •
+          </span>
+
+          {/* DUPLICATE - Same amount of repetitions */}
+          <span className="marquee-item text-slate-200 uppercase tracking-widest text-xs sm:text-sm" aria-hidden="true">
+            24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 
+            24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 
+            24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON • 
+            24 HOUR HACKATHON • 24 HOUR HACKATHON • 24 HOUR HACKATHON •
+          </span>
         </div>
       </div>
     </motion.nav>
