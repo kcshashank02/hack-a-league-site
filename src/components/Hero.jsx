@@ -41,7 +41,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
-          className="text-gray-400 mb-10"
+          className="text-gray-300 mb-10"
         >
           24 Hours of Innovation • Code • Create
         </motion.p>
