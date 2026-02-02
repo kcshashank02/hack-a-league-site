@@ -23,7 +23,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20 sm:pt-16">
       {/* 🌌 Living background */}
       <motion.img
-        src="/images/hero/hero.png"
+        src="/images/hero/hero.webp"
         alt={siteConfig.eventName}
         className="absolute inset-0 w-full h-full object-cover"
         initial={{ scale: 1.08, y: 0 }}
@@ -67,7 +67,7 @@ export default function Hero() {
           variants={item}
           className="text-base sm:text-lg md:text-2xl text-gray-300 mb-4 sm:mb-6"
         >
-          {siteConfig.eventDates} | {siteConfig.eventLocation}
+          {siteConfig.eventDates.month} {siteConfig.eventDates.start}<sup>st</sup> & {siteConfig.eventDates.end}<sup>nd</sup> {siteConfig.eventDates.year} | {siteConfig.eventLocation}
         </motion.p>
 
         <motion.p

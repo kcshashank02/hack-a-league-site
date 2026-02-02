@@ -37,7 +37,7 @@ export default function Footer() {
           <motion.div variants={item} className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-2 mb-3 sm:mb-4">
               <img
-                src="/images/logo/logo.png"
+                src="/images/logo/logo.webp"
                 alt={siteConfig.brandName}
                 className="h-7 sm:h-8"
               />

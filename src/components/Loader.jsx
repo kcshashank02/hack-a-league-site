@@ -18,7 +18,7 @@ const Loader = () => {
         className="relative z-10"
       >
         <img
-            src="/images/logo/logo.png"
+            src="/images/logo/logo.webp"
             alt={siteConfig.brandName}
             className="h-75 sm:h-75"
           />

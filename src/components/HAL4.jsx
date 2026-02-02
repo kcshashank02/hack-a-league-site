@@ -26,13 +26,13 @@ const documents = [
     title: "Rule Book",
     description: "Complete guidelines and rules for HAL 4.0",
     icon: "📋",
-    link: "/documents", // Add your actual link
+    link: "/documents/RuleBook.pdf", // Add your actual link
   },
   {
     title: "GitHub Manual",
     description: "Step-by-step guide for project submission",
     icon: "💻",
-    link: "/documents", // Add your actual link
+    link: "https://education.github.com/git-cheat-sheet-education.pdf", // Add your actual link
   },
   {
     title: "Consent Form",

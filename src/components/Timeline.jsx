@@ -1,31 +1,11 @@
 import { motion } from "framer-motion"
 import TimelineItem from "./TimelineItem"
-
-const HAL1 = [
-  "/images/hal1/1.jpg",
-  "/images/hal1/2.jpg",
-  "/images/hal1/3.jpg",
-  "/images/hal1/4.jpg",
-]
-
-const HAL2 = [
-  "/images/hal2/5.jpg",
-  "/images/hal2/6.jpg",
-  "/images/hal2/7.jpg",
-  "/images/hal2/8.jpg",
-]
-
-const HAL3 = [
-  "/images/hal3/9.jpg",
-  "/images/hal3/10.jpg",
-  "/images/hal3/11.jpg",
-  "/images/hal3/12.jpg",
-]
+import { siteConfig } from "../config/siteConfig"
 
 const timelineData = [
-  { id: "hal1", title: "HAL 1.0", year: "2023", images: HAL1 },
-  { id: "hal2", title: "HAL 2.0", year: "2024", images: HAL2 },
-  { id: "hal3", title: "HAL 3.0", year: "2025", images: HAL3 },
+  { id: "hal1", title: "HAL 1.0", year: "2023", images: siteConfig.halImages.hal1 },
+  { id: "hal2", title: "HAL 2.0", year: "2024", images: siteConfig.halImages.hal2 },
+  { id: "hal3", title: "HAL 3.0", year: "2025", images: siteConfig.halImages.hal3 },
 ]
 
 const container = {
@@ -78,7 +58,7 @@ export default function Timeline() {
           className="relative space-y-12 sm:space-y-16"
         >
           {/* Timeline line (static) */}
-          <div className="absolute left-4 sm:left-6 top-0 bottom-0 w-[2px] bg-purple-500/40" />
+          <div className="absolute left-[23px] sm:left-[30px] top-0 bottom-0 w-[2px] bg-purple-500/40" />
 
           {timelineData.map((itemData, index) => (
             <TimelineItem

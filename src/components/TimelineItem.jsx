@@ -18,10 +18,10 @@ export default function TimelineItem({ title, year, images, index }) {
       whileInView="visible"
       viewport={{ once: true, margin: "-30px" }}
       transition={{ delay: index * 0.05 }}
-      className="grid grid-cols-[60px_1fr] gap-6"
+      className="grid grid-cols-[48px_1fr] sm:grid-cols-[60px_1fr] gap-4 sm:gap-6"
     >
       {/* Timeline dot */}
-      <div className="flex flex-col items-center pt-1">
+      <div className="flex flex-col items-center">
         <motion.div
           initial={{ scale: 0.9, boxShadow: "0 0 0 0 rgba(139, 92, 246, 0)" }}
           whileInView={{

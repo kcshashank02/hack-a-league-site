@@ -17,7 +17,7 @@ export default function Navbar() {
           className="flex items-center gap-2 sm:gap-3 group"
         >
           <img
-            src="/images/logo/logo.png"
+            src="/images/logo/logo.webp"
             alt={siteConfig.brandName}
             className="h-7 sm:h-9"
           />
